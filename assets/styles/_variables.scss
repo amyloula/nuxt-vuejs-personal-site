@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("~assets/fonts/spacemono-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Space Mono-Bold";
+  src: url("~assets/fonts/spacemono-bold-webfont.woff") format("woff");
+}
+
+$main-header-font: "Space Mono-Bold";
+$main-body-font: "Space Mono";
+$center-margin: 0 auto;
+$main-padding: 0.75rem;
+
+$main-background-color: white;
+$main-body-color: #2e2b2e;
+$main-header-color: white;
+$main-accent-color: #48C9B0;
