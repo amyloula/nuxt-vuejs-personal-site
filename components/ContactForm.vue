@@ -20,16 +20,16 @@
                 <label>Don’t fill this out: <input name="bot-field"></label>
             </p>
             <label class="form-label" for="name">
-                                                          Name:
-                                                        </label>
+                                                              Name:
+                                                            </label>
             <b-form-input id="name" name="name" placeholder="Enter your name"></b-form-input>
             <label class="form-label" for="email">
-                                                          Email:
-                                                        </label>
+                                                              Email:
+                                                            </label>
             <b-form-input name="email" id="email" placeholder="Email"></b-form-input>
             <label class="form-label" for="message">
-                                                          Message:
-                                                        </label>
+                                                              Message:
+                                                            </label>
             <b-form-textarea id="message" name="message" placeholder="Enter something..." rows="3" max-rows="6"></b-form-textarea>
             <div class="contact__form__btn-wrapper">
                 <b-button variant="outline-dark" type="submit">Send me a message</b-button>
@@ -45,6 +45,7 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     padding: 1rem;
     font-family: $main-body-font;
@@ -80,6 +81,13 @@
             margin: 0.5rem 0;
             width: 100%;
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .contact__form {
+        flex-direction: column;
+        align-items: normal;
     }
 }
 </style>

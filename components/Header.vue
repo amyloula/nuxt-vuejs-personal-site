@@ -38,6 +38,9 @@
             justify-content: center;
             text-align: right;
             padding: $main-padding;
+            a {
+                color: $secondary-text-color;
+            }
             &:hover {
                 color: $main-accent-color;
                 transition: color 0.5s ease;
