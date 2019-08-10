@@ -1,28 +1,25 @@
 <template>
-  <div class="container">
-    <h1 class="title">
-      Contact
-    </h1>
-    <div class="content">
-      <form name="contact" action="/thank-you" netlify-honeypot="bot-field" method="post" netlify>
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>     
-          <label>Don’t fill this out: <input name="bot-field"></label>   
-        </p>
-        <label class="form-label" for="name">
-          Name:
-        </label>
-        <input class="form-field" name="name" id="name" />
-        <label class="form-label" for="email">
-          Email:
-        </label>
-        <input class="form-field" name="email" id="email" />
-        <label class="form-label" for="message">
-          Message:
-        </label>
-        <textarea class="form-field" name="message" id="message"></textarea>
-        <input class="form-button" type="submit" value="Send message" />
-      </form>
+    <div class="contact__container">
+        <ContactForm/>
     </div>
-  </div>
 </template>
+
+<style lang="scss" scoped>
+@import "~assets/styles/_variables.scss";
+.contact__container {
+    font-family: $main-header-font;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+</style>
+
+<script>
+import ContactForm from '~/components/ContactForm.vue'
+
+export default {
+    components: {
+        ContactForm
+    }
+}
+</script>
