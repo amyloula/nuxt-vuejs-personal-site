@@ -3,8 +3,8 @@
         <img src="~/assets/imgs/me.JPG" alt="Amy Louise McCabe" aria-label="Picture of Amy Louise McCabe">
         <section class="main__body__top">
             <h1>Hi, I'm Amy.</h1>
-            <h2>I'm a Software developer specialist, working at the Dock - Accenture’s global centre for innovation in Dublin.
-            </h2>
+            <h5>I'm a Software developer specialist, working at the Dock - Accenture’s global centre for innovation in Dublin.
+            </h5>
             <p>
                 I'm part of the CIO, a global team that provides best in class technology and employee experiences to support Accenture’s high-performance workforce. CIO brings cutting edge technologies and approaches together to deliver at scale across a global enterprise.
             </p>
@@ -68,7 +68,7 @@ body {
             font-family: $main-header-font;
             font-weight: 700;
         }
-        h2 {
+        h5 {
             font-family: $main-header-font;
         }
         p {

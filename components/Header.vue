@@ -10,10 +10,13 @@
                 <n-link to="/blog" no-prefetch>Blog</n-link>
             </div>
             <div>
-                <n-link to="/contact" no-prefetch>Contact me</n-link>
+                <n-link to="/projects" no-prefetch>Projects</n-link>
             </div>
             <div>
                 <n-link to="/events" no-prefetch>Events</n-link>
+            </div>
+            <div>
+                <n-link to="/contact" no-prefetch>Contact me</n-link>
             </div>
         </div>
     </header>
