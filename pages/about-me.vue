@@ -9,9 +9,9 @@
     </section>
     <section class="about-me secondary__container">
       <p>Languages I work with</p>
-      <div class="content__wrapper">
-        <SkillsComponent v-for="skill in skills" v-b-tooltip.hover="skill.label" :key="skill.title" :skillInfo="skill" />
-      </div>
+      <!-- <div class="content__wrapper"> -->
+        <!-- <SkillsComponent v-for="skill in skills" v-b-tooltip.hover="skill.label" :key="skill.title" :skillInfo="skill" /> -->
+      <!-- </div> -->
       <div class="content__wrapper">
         <img
           class="img"
