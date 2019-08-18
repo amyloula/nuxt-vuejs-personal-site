@@ -7,6 +7,10 @@
                 </n-link>
             </div>
             <div>
+                <n-link to="/about-me" no-prefetch>About me
+                </n-link>
+            </div>
+            <div>
                 <n-link to="/blog" no-prefetch>Blog</n-link>
             </div>
             <div>

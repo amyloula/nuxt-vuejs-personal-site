@@ -44,6 +44,7 @@ body {
     display: inline-block;
     width: 50%;
     padding: 3rem;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &:hover {
         box-shadow: 0 8px 6px -6px teal;
