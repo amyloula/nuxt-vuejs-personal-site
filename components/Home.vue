@@ -27,7 +27,7 @@ body {
 
 .main__body {
   text-align: center;
-    width: 75%;
+  width: 75%;
   margin: $center-margin;
   &__left {
     display: inline-block;
@@ -47,7 +47,7 @@ body {
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &:hover {
-        box-shadow: 0 8px 6px -6px teal;
+      box-shadow: 0 8px 6px -6px teal;
     }
     h1 {
       font-family: $main-header-font;
@@ -62,10 +62,18 @@ body {
   }
 
   @media (max-width: 768px) {
+    .main__body {
+      width: 90%;
+    }
     &__right {
       display: block;
       width: auto;
       margin-left: 0;
+    }
+    &__left {
+        img {
+            width: 100%;
+        }
     }
   }
 }

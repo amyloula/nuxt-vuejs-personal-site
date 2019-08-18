@@ -57,4 +57,12 @@ export default {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    .logo__wrapper {
+      width: 100%;
+    }
+  }
+}
 </style>
