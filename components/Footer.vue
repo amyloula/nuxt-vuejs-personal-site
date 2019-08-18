@@ -9,6 +9,7 @@
             <p>
             © Amy McCabe 2019
             </p>
+            <a href="https://github.com/amyloula/nuxt-vuejs-personal-site">< See-the-source-code-here / ></a>
         </div>
     </footer>
 </template>
@@ -25,6 +26,7 @@ export default {
     height: auto;
     width: 100%;
     padding: 2rem;
+    font-family: $main-body-font;
     .logo__wrapper {
         margin: 0 auto;
         width: 50%;
