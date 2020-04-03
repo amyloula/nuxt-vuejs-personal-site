@@ -11,6 +11,7 @@
                     <li>Mentorship</li>
                 </ul>
                 <p>Please try to be <span class="bold-text">as specific as possible in your request</span> so I can best help you. </p>
+                <a href="https://twitter.com/intent/tweet?screen_name=amyloulala&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @amyloulala</a>
             </div>
         </div>
         <div class="contact__form__right-panel">
@@ -19,17 +20,11 @@
             <p hidden>
                 <label>Don’t fill this out: <input name="bot-field"></label>
             </p>
-            <label class="form-label" for="name">
-                                                              Name:
-                                                            </label>
+            <label class="form-label" for="name">Name:</label>
             <b-form-input id="name" name="name" placeholder="Enter your name"></b-form-input>
-            <label class="form-label" for="email">
-                                                              Email:
-                                                            </label>
+            <label class="form-label" for="email">Email:</label>
             <b-form-input name="email" id="email" placeholder="Email"></b-form-input>
-            <label class="form-label" for="message">
-                                                              Message:
-                                                            </label>
+            <label class="form-label" for="message">Message:</label>
             <b-form-textarea id="message" name="message" placeholder="Enter something..." rows="3" max-rows="6"></b-form-textarea>
             <div class="contact__form__btn-wrapper">
                 <b-button variant="outline-dark" type="submit">Send me a message</b-button>
@@ -37,6 +32,18 @@
         </div>
     </form>
 </template>
+
+<script>
+export default {
+    head() {
+        return {
+            script: [{
+                src: 'https://platform.twitter.com/widgets.js'
+            }],
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "~assets/styles/_variables.scss";
@@ -49,7 +56,7 @@
     align-items: flex-end;
     padding: 1rem;
     font-family: $main-body-font;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: $main-box-shadow;
     &__left-panel {
         flex: 1;
         padding: 1rem;
