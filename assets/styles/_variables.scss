@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Space Mono";
-  src: url("~assets/fonts/spacemono-regular-webfont.woff") format("woff");
+  font-family: 'Space Mono';
+  src: url('~assets/fonts/spacemono-regular-webfont.woff') format('woff');
   font-display: fallback;
 }
 @font-face {
-  font-family: "Space Mono-Bold";
-  src: url("~assets/fonts/spacemono-bold-webfont.woff") format("woff");
+  font-family: 'Space Mono-Bold';
+  src: url('~assets/fonts/spacemono-bold-webfont.woff') format('woff');
   font-display: fallback;
 }
 
-$main-header-font: "Space Mono-Bold";
-$main-body-font: "Space Mono";
+$main-header-font: 'Space Mono-Bold';
+$main-body-font: 'Space Mono';
 $center-margin: 0 auto;
 $main-padding: 0.75rem;
 
@@ -23,6 +23,5 @@ $main-box-shadow: 0 8px 6px -6px black;
 $secondary-background-color: #ecf0f1;
 $secondary-text-color: #212f3c;
 
-// -moz-box-shadow:    inset 0 0 10px #000000;
-//  -webkit-box-shadow: inset 0 0 10px #000000;
-//  box-shadow:         inset 0 0 10px #000000;
+$gradient-background-color: #8ec5fc;
+$background-gradient: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
