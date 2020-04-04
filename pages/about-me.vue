@@ -12,21 +12,7 @@
         />
       </div>
       <div class="about-me main__container--right">
-        <div class="about-me text__wrapper">
-          <h1>I'm serious as a heart attack</h1>
-          <p>
-            The path of the righteous man is beset on all sides by the
-            iniquities of the selfish and the tyranny of evil men. Blessed is he
-            who, in the name of charity and good will, shepherds the weak
-            through the valley of darkness, for he is truly his brother's keeper
-            and the finder of lost children. And I will strike down upon thee
-            with great vengeance and furious anger those who would attempt to
-            poison and destroy My brothers. And you will know My name is the
-            Lord when I lay My vengeance upon thee.
-          </p>
-
-          <!-- end slipsum code -->
-        </div>
+        <Carousel :cards="cards" />
         <SocialIcon
           v-for="icon in socialProfiles"
           :key="icon.label"
@@ -43,11 +29,11 @@
   background-image: $background-gradient;
 }
 .about-me {
-  padding-top: 1rem;
   margin: $center-margin;
   position: relative;
   .header__container {
     text-align: center;
+    padding-bottom: 3rem;
     h3 {
       font-family: $main-header-font;
     }
@@ -100,7 +86,7 @@
     &--left {
       flex: 1;
       order: 0;
-      align-self: center;
+      align-self: stretch;
     }
     &--right {
       background-color: white;
@@ -109,17 +95,57 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    .main__container {
+      flex-direction: column;
+
+      img {
+        width: 90%;
+        height: auto;
+      }
+
+      &--right {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
 </style>
 <script>
 import SkillsComponent from '~/components/Skills.vue'
+import Carousel from '~/components/Carousel.vue'
 import SocialIcon from '~/components/SocialIcon.vue'
 export default {
   components: {
     SkillsComponent,
-    SocialIcon
+    SocialIcon,
+    Carousel
   },
   data() {
     return {
+      cards: [
+        {
+          headline: 'Software Engineer',
+          p1: 'Specialist in JavaScript, TypeScript, Node.js, Angular.',
+          p2:
+            'Experienced in React, Redux, rxjs, Vue.js, Nuxt.js, Python, Django, Ruby, PHP.'
+        },
+        {
+          headline: 'Women in tech advocate',
+          p1:
+            'WWCode Network Evangelist, GDG Cloud Organizer, Women Techmakers Ambassador.',
+          p2: ''
+        },
+        {
+          headline: 'Human being',
+          p1:
+            'Wife 👰🏽, animal lover 🐶, bookworm 📚, yogi 🧘🏽‍♀️, skin care enthusiast 🧴, emoji fluent 🤓, avid gif sharer 🤲🏽, electronic music lover ⚡️',
+          p2:
+            'Polygot - english 🏴󠁧󠁢󠁥󠁮󠁧󠁿, spanish 🇪🇸, catalan 🎗, portuguese 🇧🇷, arabic 🇴🇲 '
+        }
+      ],
       socialProfiles: [
         {
           link: 'https://github.com/amyloula',

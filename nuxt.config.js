@@ -49,8 +49,11 @@ export default {
       'BBadge',
       'BButton',
       'BIconStar',
+      'BIconArrowLeft',
+      'BIconArrowRight',
       'BIconStarFill',
-      'BFormInput'
+      'BFormInput',
+      'BFormTextarea'
     ]
   },
   /*
