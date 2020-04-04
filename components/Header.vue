@@ -34,9 +34,10 @@
     margin-left: auto;
     flex-wrap: wrap;
     font-family: $main-header-font;
+    align-items: center;
+    padding: 1rem;
     > div {
       flex: 1;
-      justify-content: center;
       text-align: right;
       padding: $main-padding;
       a {
@@ -46,6 +47,14 @@
         color: $main-accent-color;
         transition: color 0.5s ease;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .header__inner-wrapper {
+      width: 100%;
     }
   }
 }

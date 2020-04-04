@@ -111,8 +111,9 @@ export default {
     }
   }
   &__right-panel {
-    flex: 2;
+    flex: 1;
     padding: 1rem;
+    align-self: center;
     .header {
       font-family: $main-header-font;
     }
@@ -130,6 +131,17 @@ export default {
   .contact__form {
     flex-direction: column;
     align-items: normal;
+
+    &__left-panel {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        align-self: end;
+        height: 5rem;
+        width: 5rem;
+      }
+    }
   }
 }
 </style>

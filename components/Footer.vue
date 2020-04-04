@@ -3,9 +3,15 @@
     <div class="footer logo__wrapper">
       <p>This site was built with Nuxt.js and Vue.js</p>
       <p>Hosted on Netlify</p>
-      <SocialIcon v-for="icon in footerIcons" :key="icon.label" :socialInfo="icon" />
-      <p>© Amy McCabe 2019</p>
-      <a href="https://github.com/amyloula/nuxt-vuejs-personal-site">< See-the-source-code-here / ></a>
+      <SocialIcon
+        v-for="icon in footerIcons"
+        :key="icon.label"
+        :socialInfo="icon"
+      />
+      <p>© Amy McCabe 2020</p>
+      <a href="https://github.com/amyloula/nuxt-vuejs-personal-site"
+        >< See-the-source-code-here / ></a
+      >
     </div>
   </footer>
 </template>
