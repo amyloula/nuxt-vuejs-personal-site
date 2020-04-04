@@ -9,7 +9,7 @@
     </div>
     <div class="tile__content">
       <p>{{ tileInfo.name }}</p>
-      <a :href="url">
+      <a :href="url" rel="noreferrer">
         <b-button variant="outline-light">View code</b-button>
       </a>
     </div>

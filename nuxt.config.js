@@ -44,7 +44,14 @@ export default {
   ],
   bootstrapVue: {
     // Add the desired icon components to the `components` array
-    components: ['BIcon', 'BBadge', 'BButton', 'BIconStar', 'BIconStarFill']
+    components: [
+      'BIcon',
+      'BBadge',
+      'BButton',
+      'BIconStar',
+      'BIconStarFill',
+      'BFormInput'
+    ]
   },
   /*
    ** Axios module configuration
