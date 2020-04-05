@@ -84,7 +84,6 @@ export default {
 @import '~assets/styles/_variables.scss';
 .contact__form {
   background-color: $secondary-background-color;
-  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -127,7 +126,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .contact__form {
     flex-direction: column;
     align-items: normal;
@@ -141,6 +140,10 @@ export default {
         height: 5rem;
         width: 5rem;
       }
+    }
+
+    &__right-panel {
+      align-self: stretch;
     }
   }
 }

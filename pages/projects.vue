@@ -35,11 +35,20 @@
 .content__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 75%;
   margin: $center-margin;
+  align-items: center;
+  justify-content: center;
   > img {
     flex: 1;
     justify-content: center;
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen and(min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .content__wrapper {
+    width: 100%;
   }
 }
 </style>

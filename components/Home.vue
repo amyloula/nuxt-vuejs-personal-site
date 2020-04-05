@@ -21,21 +21,18 @@
 </template>
 <style lang="scss" scoped>
 @import '~assets/styles/_variables.scss';
-body {
-  background: $main-background-color;
-  color: $main-body-color;
-}
-
 .main__body {
-  text-align: center;
-  width: 75%;
-  margin: $center-margin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
   &__left {
-    display: inline-block;
     img {
       height: 25rem;
       width: 25rem;
       vertical-align: baseline;
+      transition: 0.3s;
       &:hover {
         box-shadow: 0 8px 6px -6px #e0c3fc;
       }
@@ -45,10 +42,10 @@ body {
     background-color: white;
     box-shadow: $main-box-shadow;
     margin-left: -3rem;
-    display: inline-block;
     width: 30%;
     padding: 3rem;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.3s;
+    border: 1px solid black;
 
     &:hover {
       box-shadow: 0 8px 6px -6px $gradient-background-color;
@@ -65,20 +62,16 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .main__body {
-      width: 90%;
-    }
-    &__right {
-      display: block;
-      width: auto;
-      margin-left: 0;
-    }
-    &__left {
-      img {
-        width: 100%;
-      }
+      flex-direction: column;
     }
   }
+
+  // @media only screen and(min-width: 769px) and (max-width: 1024px) {
+  //   .main__body {
+  //     flex-direction: column;
+  //   }
+  // }
 }
 </style>
