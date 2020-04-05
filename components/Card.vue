@@ -2,9 +2,8 @@
   <div class="card">
     <div class="card-content">
       <h3 class="headline">{{ headline }}</h3>
-      <p>{{ p1 }}</p>
+      <p v-for="(item, index) in text" v-bind:key="index">{{ item }}</p>
       <hr />
-      <p>{{ p2 }}</p>
     </div>
   </div>
 </template>
@@ -14,8 +13,7 @@ export default {
   name: 'Card',
   props: {
     headline: String,
-    p1: String,
-    p2: String
+    text: Array
   }
 }
 </script>

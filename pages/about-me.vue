@@ -22,6 +22,69 @@
     </section>
   </div>
 </template>
+<script>
+import SkillsComponent from '~/components/Skills.vue'
+import Carousel from '~/components/Carousel.vue'
+import SocialIcon from '~/components/SocialIcon.vue'
+export default {
+  components: {
+    SkillsComponent,
+    SocialIcon,
+    Carousel
+  },
+  data() {
+    return {
+      cards: [
+        {
+          headline: 'Software Engineer',
+          text: [
+            'Specialist in JavaScript, TypeScript, Node.js, Angular.',
+            'Experienced in React, Redux, rxjs, Vue.js, Nuxt.js, Python, Django, Ruby, PHP.'
+          ]
+        },
+        {
+          headline: 'Women in tech advocate',
+          text: [
+            'WWCode Network Evangelist',
+            'GDG Cloud Organizer',
+            'Women Techmakers Ambassador.'
+          ]
+        },
+        {
+          headline: 'Human being',
+          text: [
+            'Wife 👰🏽, animal lover 🐶, bookworm 📚, yogi 🧘🏽‍♀️, skin care enthusiast 🧴, emoji fluent 🤓, avid gif sharer 🤲🏽, electronic music lover ⚡️',
+            'Polygot - english 🏴󠁧󠁢󠁥󠁮󠁧󠁿, spanish 🇪🇸, catalan 🎗, portuguese 🇧🇷, arabic 🇴🇲 '
+          ]
+        }
+      ],
+      socialProfiles: [
+        {
+          link: 'https://github.com/amyloula',
+          img: 'github-light.svg',
+          label: 'Github'
+        },
+        {
+          link: 'https://stackoverflow.com/users/4203782/amyloula',
+          img: 'stackoverflow.svg',
+          label: 'Stackoverflow'
+        },
+        {
+          link: 'https://twitter.com/amyloulala',
+          img: 'twitter.svg',
+          label: 'Twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/amylouisemccabe/',
+          img: 'linkedin.svg',
+          label: 'Linkedin'
+        }
+      ]
+    }
+  },
+  methods: {}
+}
+</script>
 <style lang="scss" scoped>
 @import '~assets/styles/_variables.scss';
 .content-wrapper {
@@ -112,64 +175,7 @@
     }
   }
 }
-</style>
-<script>
-import SkillsComponent from '~/components/Skills.vue'
-import Carousel from '~/components/Carousel.vue'
-import SocialIcon from '~/components/SocialIcon.vue'
-export default {
-  components: {
-    SkillsComponent,
-    SocialIcon,
-    Carousel
-  },
-  data() {
-    return {
-      cards: [
-        {
-          headline: 'Software Engineer',
-          p1: 'Specialist in JavaScript, TypeScript, Node.js, Angular.',
-          p2:
-            'Experienced in React, Redux, rxjs, Vue.js, Nuxt.js, Python, Django, Ruby, PHP.'
-        },
-        {
-          headline: 'Women in tech advocate',
-          p1:
-            'WWCode Network Evangelist, GDG Cloud Organizer, Women Techmakers Ambassador.',
-          p2: ''
-        },
-        {
-          headline: 'Human being',
-          p1:
-            'Wife 👰🏽, animal lover 🐶, bookworm 📚, yogi 🧘🏽‍♀️, skin care enthusiast 🧴, emoji fluent 🤓, avid gif sharer 🤲🏽, electronic music lover ⚡️',
-          p2:
-            'Polygot - english 🏴󠁧󠁢󠁥󠁮󠁧󠁿, spanish 🇪🇸, catalan 🎗, portuguese 🇧🇷, arabic 🇴🇲 '
-        }
-      ],
-      socialProfiles: [
-        {
-          link: 'https://github.com/amyloula',
-          img: 'github-light.svg',
-          label: 'Github'
-        },
-        {
-          link: 'https://stackoverflow.com/users/4203782/amyloula',
-          img: 'stackoverflow.svg',
-          label: 'Stackoverflow'
-        },
-        {
-          link: 'https://twitter.com/amyloulala',
-          img: 'twitter.svg',
-          label: 'Twitter'
-        },
-        {
-          link: 'https://www.linkedin.com/in/amylouisemccabe/',
-          img: 'linkedin.svg',
-          label: 'Linkedin'
-        }
-      ]
-    }
-  },
-  methods: {}
+
+@media only screen and (max-width: 1024px) {
 }
-</script>
+</style>

@@ -10,8 +10,7 @@
         class="current-element"
         ref="card"
         :headline="currentElement.headline"
-        :p1="currentElement.p1"
-        :p2="currentElement.p2"
+        :text="currentElement.text"
       />
       <ArrowButton
         arrowType="right"
