@@ -8,10 +8,10 @@
       />
     </div>
     <section class="main__body__right">
-      <h1>Hi, I'm Amy.</h1>
+      <h1>Hi, I'm Amy!</h1>
       <h5>
-        I'm a Software developer specialist, working at the Dock - Accenture’s
-        global centre for innovation in Dublin.
+        JavaScript specialist, focused on: Progressive Web Apps, Cloud Native
+        Apps and keeping up to date with the latest ECMAScript specifications.
       </h5>
       <n-link to="/about-me" no-prefetch>
         <b-button variant="outline-dark">Find out more about me</b-button>
@@ -67,11 +67,5 @@
       flex-direction: column;
     }
   }
-
-  // @media only screen and(min-width: 769px) and (max-width: 1024px) {
-  //   .main__body {
-  //     flex-direction: column;
-  //   }
-  // }
 }
 </style>

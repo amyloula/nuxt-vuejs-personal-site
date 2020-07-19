@@ -1,7 +1,7 @@
 {
   "name": "amyloula-my-personal-site",
   "version": "1.0.0",
-  "description": "Amyloula - My personal site built with Vue.js and Nuxt.js",
+  "description": "My personal site built with Vue.js and Nuxt.js",
   "author": "amyloula",
   "private": true,
   "scripts": {

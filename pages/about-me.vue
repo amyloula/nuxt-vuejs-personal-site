@@ -38,15 +38,15 @@ export default {
         {
           headline: 'Software Engineer',
           text: [
-            'Specialist in JavaScript, TypeScript, Node.js, Angular.',
-            'Experienced in React, Redux, rxjs, Vue.js, Nuxt.js, Python, Django, Ruby, PHP.'
+            'Specialist in JavaScript: ES6+, TypeScript, Angular, NgRx, RxJS, Node.js.',
+            'Experienced in Vue.js, Vuex, Nuxt.js, React, Redux, Angular.js, Python, Django, Ruby, PHP.'
           ]
         },
         {
-          headline: 'Women in tech advocate',
+          headline: 'Women in Tech advocate',
           text: [
             'WWCode Network Evangelist',
-            'GDG Cloud Organizer',
+            'GDG Cloud Co-Organizer',
             'Women Techmakers Ambassador.'
           ]
         },
