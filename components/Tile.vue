@@ -1,8 +1,8 @@
 <template>
   <div class="tile">
     <div class="tile__header">
-      <b-icon-star v-if="tileInfo.stars === 0"></b-icon-star>
       <b-icon-star-fill v-if="tileInfo.stars > 0"></b-icon-star-fill>
+      <b-icon-star v-else></b-icon-star>
       <b-badge variant="light">
         {{ tileInfo.stars }}
       </b-badge>

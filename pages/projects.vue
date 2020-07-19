@@ -76,7 +76,7 @@ export default {
           resp.forEach(element => {
             this.tiles.push({
               name: element.name,
-              url: element.url,
+              url: element.svn_url,
               stars: element.stargazers_count
             })
           })
