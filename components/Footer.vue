@@ -9,7 +9,7 @@
         :socialInfo="icon"
       />
       <p>© Amy McCabe 2020</p>
-      <a href="https://github.com/amyloula/nuxt-vuejs-personal-site"
+      <a href="https://github.com/amyloula/nuxt-vuejs-personal-site" rel="noreferrer"
         >< See-the-source-code-here / ></a
       >
     </div>

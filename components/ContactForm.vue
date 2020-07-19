@@ -30,7 +30,7 @@
         <a
           href="https://twitter.com/intent/tweet?screen_name=amyloulala&ref_src=twsrc%5Etfw"
           class="twitter-mention-button"
-          data-show-count="false"
+          data-show-count="false" rel="noreferrer"
           >Tweet to @amyloulala</a
         >
       </div>
